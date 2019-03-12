@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Beauty</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+
+
+
+</head>
+<body>
+  <app-root></app-root>
+</body>
+
+
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<script>
+if(!/iPhone/i.test(navigator.userAgent)) {
+    $('.active > div > video').get(0).play();
+
+    $('#carousel').bind('slide.bs.carousel', function(e) {
+      $(e.relatedTarget).find('video').get(0).play();
+    });
+
+    $('#carousel').bind('slid.bs.carousel', function(e) {
+      $('video').not('.active > div > video').each(function() {
+        $(this).get(0).pause();
+      });
+    });
+  }
+</script>
+
+</html>
