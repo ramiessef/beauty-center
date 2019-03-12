@@ -383,3 +383,7 @@ display: block ;
     }
 
 }
+.mx-auto .input-group-lg{
+  display: flex;
+  justify-content: center;
+}
