@@ -281,14 +281,14 @@
  <section id="section6">
   <div class=" cf bg2">
    <div class="col style text para6">
-    SUBSCRIBE TO OUR NEWSLETTER
+    <h3>   SUBSCRIBE TO OUR NEWSLETTER </h3>
 </div>
 <br>
 <div class="col style text para2">
     Stay informed about us, news and events.
 </div>
 
-<div class="col-8 mx-auto">
+<div class="col-md-5 mx-auto">
 <div class="input-group input-group-lg margin6" >
 
 <input type="text" placeholder ="Enter your e-mail address"class="form-control text-center" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
@@ -298,38 +298,26 @@
 </div>
 </div>
 <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
-<div class="container stylenav1">
-<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-Menu
-<i class="fas fa-bars"></i>
-</button>
+<div class="container ">
 <div class="collapse navbar-collapse margin7" id="navbarResponsive">
-<ul class="navbar-nav ml-auto">
-
-<li class="nav-item listyle">
-<a class="nav-link " href="#projects" style="color:antiquewhite">OUR SERVICES</a>
-</li>
-<li class="nav-item listyle">
-<a class="nav-link " href="#section1" style="color:antiquewhite">OFFER</a>
-</li>
-<li class="nav-item listyle">
-<a class="nav-link " href="#signup" style="color:antiquewhite">MY ACCOUNT</a>
-</li>
-<li class="nav-item listyle">
-<a class="nav-link " href="#signup" style="color:antiquewhite">PRO</a>
-</li>
-<li class="nav-item listyle">
-<a class="nav-link " href="#signup" style="color:antiquewhite">CONTACT US</a>
-</li>
-
-</ul>
+    <nav>
+        <ul id="MainMenu" class="navbar-nav">
+                <li><a [routerLink]="['/']">Home</a></li>
+                <li><a [routerLink]="['/services']" >our services</a></li>
+                <li><a>Login</a></li>
+                <li><a>my account</a></li>
+                <li><a>pro</a></li>
+                <li><a>contact us</a></li>
+                <li><a>pl</a></li>
+        </ul>
+    </nav>
 </div>
 </div>
 </nav>
 
 <div class="container text-center margin8">
 <div class="row ">
-<div class="col-8 mx-auto">
+<div class="col-8 social mx-auto">
 <div class="thumbnail">
  <a href="/w3images/lights.jpg" target="_blank">
    <img src="/assets/images/ic_facebook@2x.png" class="padR">
